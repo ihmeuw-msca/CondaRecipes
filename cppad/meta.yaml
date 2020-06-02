@@ -1,0 +1,21 @@
+{% set name = "cppad" %}
+{% set version = "20200000.03" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  git_rev: ce238ed87080d1cdebc84770002f41b3abfb2229
+  git_url: https://github.com/coin-or/CppAD.git
+
+requirements:
+  build:
+    - cmake
+
+about:
+  dev_url: https://github.com/coin-or/CppAD
+  doc_url: https://coin-or.github.io/CppAD/doc
+  home: https://coin-or.github.io/CppAD/doc
+  license: GNU General Public License
+  summary: A Package for Differentiation of C++ Algorithms
